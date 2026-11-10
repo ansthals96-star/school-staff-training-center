@@ -1,4 +1,5 @@
-/**
+function myFunction() {
+  /**
  * School Health Hub - Hub Sheet v1.1 Apps Script API
  *
  * Data is stored only in the school's Google Sheet and Google Drive.
@@ -2241,4 +2242,5 @@ function appError_(message, code) {
 function isExampleRow_(row) {
   var joined = Object.keys(row).map(function (key) { return text_(row[key]); }).join(" ");
   return /예시|샘플|sample|YOUR_|YOUR DEPLOYMENT ID/i.test(joined) && !/(TRN|STF|ATT|SIG|CERT)-/i.test(joined);
+}
 }
